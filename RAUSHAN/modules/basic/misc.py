@@ -11,20 +11,20 @@ from RAUSHAN.helper.PyroHelpers import ReplyCheck
 from RAUSHAN.modules.help import add_command_help
 from RAUSHAN.modules.bot.inline import get_readable_time
 
-alive_logo = ALIVE_PIC or "https://graph.org/file/c6a2ed96648fd03377dc9.jpg"
+alive_logo = ALIVE_PIC or "https://graph.org/file/9ee37cccd7bf55c3ec953.png"
 
 if ALIVE_TEXT:
    txt = ALIVE_TEXT
 else:
     txt = (
-        f"** ⚡️ 𝗔𝗟𝗣𝗛𝗔 ⚡️ **\n\n"
+        f"** ⚡️ 𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭-✗-𝐁𝐨𝐭 ⚡️ **\n\n"
         f"❏ **𝐕ᴇʀsɪᴏɴ**: `2.1`\n"
         f"├• **𝐔ᴘᴛɪᴍᴇ**: `{str(datetime.now() - START_TIME).split('.')[0]}`\n"
         f"├• **𝐏ʏᴛʜᴏɴ**: `{python_version()}`\n"
         f"├• **𝐏ʏʀᴏɢʀᴀᴍ**: `{__version__}`\n"
-        f"├• **𝐒ᴜᴘᴘᴏʀᴛ-𝐂ʜᴀᴛ**: [|| ˹𝗔ʟᴘʜᴀ 𝗪ᴏʀʟᴅ˼ ||](t.me/WORLD_ALPHA)\n"
-        f"├• **𝐔ᴘᴅᴀᴛᴇs**: [𝗔𝗟𝗣𝗛𝗔](t.me/ALPHA_DPZ_WORLD)\n"
-        f"└• **𝐌ᴀsᴛᴇʀ**: [𝗥𝗔𝗨𝗦𝗛𝗔𝗡](t.me/ll_ALPHA_BABY_lll)"        
+        f"├• **𝐒ᴜᴘᴘᴏʀᴛ-𝐂ʜᴀᴛ**: [𝅗ـﮩ٨ـ𝅽𝅾𓆩𝐇𖽞𖽖֯֟፝͢͡𖽸𖾓𝂬𓏲ࣹ᷼𝄢𝂬𝐁𖽞֟֠֯፝͢͡𖽖𖾓𓆪ﮩ٨ـ𝅽𝅾‐𝅘▹ᴴᴮ⸳⸳ⷮ⸳⸳ⷨ](t.me/HeartBeat_Muzic)\n"
+        f"├• **𝐔ᴘᴅᴀᴛᴇs**: [𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭](t.me/HeartBeat_Offi)\n"
+        f"└• **𝐌ᴀsᴛᴇʀ**: [𝐆𝖍𝖔𝖘𝖙𝐁𝖆𝖙](t.me/rajeshrakis)"        
     )
 
 @Client.on_message(
@@ -57,7 +57,7 @@ async def repo(bot: Client, message: Message):
     await asyncio.sleep(1)
     await message.edit("Fetching Source Code.....")
     await asyncio.sleep(1)
-    await message.edit("Here is repo: \n\n\nhttps://github.com/TEAMPURVI/ALPHA_USERBOT\nFork & Give an ⭐")
+    await message.edit("Here is repo: \n\n\n https://t.me/HeartBeat_Muzic \nTAG: @rajeshrakis | @Ghostt_Batt⭐")
 
 
 @Client.on_message(filters.command("creator", ".") & filters.me)

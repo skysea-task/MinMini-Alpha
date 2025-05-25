@@ -5,7 +5,7 @@ import os
 import sys
 import asyncio
 from random import choice
-OWNER_ID = 7403621976
+OWNER_ID = 1281282633
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from cache.data import *
@@ -24,14 +24,14 @@ async def dmraid(xspam: Client, e: Message):
           ok = await xspam.get_users(RAUSHAN[1])
           id = ok.id
           if int(id) in VERIFIED_USERS:
-                text = f"Chal Chal baap Ko mat sikha"
+                text = f"ɪғ ᴜʀ ʙᴀᴅ..ᴀᴍ ᴜʀ ᴅᴀᴅ💥"
                 await e.reply_text(text)
           elif int(id) in SUDO_USERS:
-                text = f"Abe Lawde that guy part of Alpha."
+                text = f"ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ʜᴇᴀʀᴛʙᴇᴀᴛ ғᴀᴍ 🏓"
                 await e.reply_text(text)
           else:
               counts = int(RAUSHAN[0])
-              await e.reply_text("`Dm Raid Strated Successfully`")
+              await e.reply_text("`ᴀɴʙᴜ ᴛʜᴏʟʟᴀɪ ᴘᴀɴɴᴜᴠᴇɴ`")
               for _ in range(counts):
                     reply = choice(RAID)
                     msg = f"{reply}"
@@ -42,14 +42,14 @@ async def dmraid(xspam: Client, e: Message):
           ok = await xspam.get_users(user_id)
           id = ok.id
           if int(id) in VERIFIED_USERS:
-                text = f"Chal Chal baap Ko mat sikha"
+                text = f"ɪғ ᴜ ʀ ʙᴀᴅ..ᴀᴍ ᴜʀ ᴅᴀᴅ🏓"
                 await e.reply_text(text)
           elif int(id) in SUDO_USERS:
-                text = f"Abe Lawde that guy part of Stranger."
+                text = f"ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ʜᴇᴀʀᴛʙᴇᴀᴛ ғᴀᴍ🏓."
                 await e.reply_text(text)
           else:
               counts = int(RAUSHAN[0])
-              await e.reply_text("Dm Raid Strated Successfully")
+              await e.reply_text("ᴀɴʙᴜ ᴛʜᴏʟʟᴀɪ ɪɴɪᴛʜᴇ ᴀᴀʀᴀᴍʙᴀᴍ")
               for _ in range(counts):
                     reply = choice(RAID)
                     msg = f"{reply}"
@@ -67,14 +67,14 @@ async def dmspam(spam: Client, e: Message):
           ok = await spam.get_users(text[0])
           id = ok.id
           if int(id) in VERIFIED_USERS:
-                text = f"Chal Chal baap Ko mat sikha"
+                text = f"ɪғ ᴜ ʀ ʙᴀᴅ..ᴀᴍ ᴜʀ ᴅᴀᴅ💥"
                 await e.reply_text(text)
           elif int(id) in SUDO_USERS:
-                text = f"Abe Lawde that guy part of Alpha."
+                text = f"ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ʜᴇᴀʀᴛʙᴇᴀᴛ ғᴀᴍ🏓."
                 await e.reply_text(text)
           else:
               counts = int(RAUSHAN[0])
-              await e.reply_text("Dm Spam Strated")
+              await e.reply_text("ᴛʜᴏʟʟᴀ ᴘᴀɴᴀ ᴀᴀʀᴀᴍɪᴄʜɪᴛᴇɴ")
               for _ in range(counts):
                     await spam.send_message(id, msg)
                     await asyncio.sleep(0.10)
@@ -83,15 +83,15 @@ async def dmspam(spam: Client, e: Message):
           ok = await spam.get_users(user_id)
           id = ok.id
           if int(id) in VERIFIED_USERS:
-                text = f"Chal Chal baap Ko mat sikha"
+                text = f"ɪғ ᴜ ʀ ʙᴀᴅ..ᴀᴍ ᴜʀ ᴅᴀᴅ 💫"
                 await e.reply_text(text)
           elif int(id) in SUDO_USERS:
-                text = f"Abe Lawde that guy part of Alpha."
+                text = f"ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ʜᴇᴀʀᴛʙᴇᴀᴛ ғᴀᴍ 🏓."
                 await e.reply_text(text)
           else:
               counts = int(text[0])
               msg = str(RAUSHAN[0])
-              await e.reply_text("☢️ Dm Spam Strated ☢️")
+              await e.reply_text("ᴇɴ ᴀɴʙᴜ ᴛʜᴏʟʟᴀɪ 💫")
               for _ in range(counts):
                     await spam.send_message(id, msg)
                     await asyncio.sleep(0.10)

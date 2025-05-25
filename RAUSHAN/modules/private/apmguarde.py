@@ -21,7 +21,7 @@ async def pmguard(client, message):
     if arg == "on":
         await RAUSHAN.set_pm(True)
         await message.edit("**PM Guard Activated**")
-@Client.on_message(filters.command("setpmmsg", ["."]) & filters.me)
+@Client.on_message(filters.command("xsetpmmsg", ["."]) & filters.me)
 async def setpmmsg(client, message):
     arg = get_arg(message)
     if not arg:
@@ -42,7 +42,7 @@ add_command_help(
         [".setpmmsg [message or default]", " -> Sets a custom anti-pm message."],
         [".setblockmsg [message or default]", "-> Sets custom block message."],
         [".setlimit [value]", " -> This one sets a max. message limit for unwanted PMs and when they go beyond it, bamm!."],
-        [".allow", " -> Allows a user to PM you."],
-        [".deny", " -> Denies a user to PM you."],
+        [".a", " -> Allows a user to PM you."],
+        [".da", " -> Denies a user to PM you."],
     ],
 )

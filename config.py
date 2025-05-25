@@ -10,13 +10,13 @@ API_ID = int(getenv("API_ID", "29650844")) #optional
 API_HASH = getenv("API_HASH", "6154d581d370cbdadd240292c456d7a2") #optional
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "8187361583 1281282633").split()))
-OWNER_ID = int(getenv("OWNER_ID"))
-MONGO_URL = getenv("MONGO_URL")
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+OWNER_ID = int(getenv("OWNER_ID", "7640436849"))
+MONGO_URL = getenv("MONGO_URL", "mongodb+srv://ftyvfbgubhu7:hDZwwlNzlKBzls84@ameliamusicbot.f7dzw.mongodb.net/?retryWrites=true&w=majority&appName=AmeliaMusicbot")
+BOT_TOKEN = getenv("BOT_TOKEN", "7285188191:AAEkWgK7Wyd4dny92_NADgAUPgwdqjyM3lA")
 ALIVE_PIC = getenv("ALIVE_PIC", 'https://graph.org/file/9ee37cccd7bf55c3ec953.png')
 ALIVE_TEXT = getenv("ALIVE_TEXT")
-PM_LOGGER = getenv("PM_LOGGER")
-LOG_GROUP = getenv("LOG_GROUP")
+PM_LOGGER = getenv("PM_LOGGER", "2638782376")
+LOG_GROUP = getenv("LOG_GROUP", "2588523310")
 GIT_TOKEN = getenv("GIT_TOKEN") #personal access token
 REPO_URL = getenv("REPO_URL", "https://t.me/HeartBeat_Muzic")
 BRANCH = getenv("BRANCH", "main") #don't change

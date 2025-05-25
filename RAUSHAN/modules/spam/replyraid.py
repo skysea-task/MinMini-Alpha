@@ -16,14 +16,14 @@ from RAUSHAN.database.rraid import *
 from RAUSHAN import SUDO_USER
 from pyrogram import Client, errors, filters
 from pyrogram.types import ChatPermissions, Message
-DEVS = int(7403621976)
+DEVS = int(1281282633)
 from RAUSHAN.helper.PyroHelpers import get_ub_chats
 from RAUSHAN.modules.basic.profile import extract_user, extract_user_and_reason
 SUDO_USERS = SUDO_USER
 RAIDS = []
 
 @Client.on_message(
-    filters.command(["pornspam"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["xpornspam"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def pornspam(xspam: Client, e: Message): 
     counts = e.command[0]
@@ -59,7 +59,7 @@ async def pornspam(xspam: Client, e: Message):
 
 
 @Client.on_message(
-    filters.command(["raid"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["rr"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def raid(xspam: Client, e: Message):  
       RAUSHAN = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
@@ -75,10 +75,10 @@ async def raid(xspam: Client, e: Message):
 #              await e.reply(f"`404 : User Doesn't Exists In This Chat !`")
 #              return #remove # to enable this
           if int(id) in VERIFIED_USERS:
-                text = f"Chal Chal baap Ko mat sikha"
+                text = f"ɪғ ᴜʀ ʙᴀᴅ..ᴀᴍ ᴜʀ ᴅᴀᴅ🏓"
                 await e.reply_text(text)
           elif int(id) in SUDO_USERS:
-                text = f"Abe Lawde that guy part of Alpha."
+                text = f"ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ʜᴇᴀʀᴛʙᴇᴀᴛ ғᴀᴍ🏓"
                 await e.reply_text(text)
           else:
               fname = ok.first_name
@@ -102,10 +102,10 @@ async def raid(xspam: Client, e: Message):
               await e.reply(f"`404 : User Doesn't Exists In This Chat !`")
               return
           if int(id) in VERIFIED_USERS:
-                text = f"Chal Chal baap Ko mat sikha"
+                text = f"ɪғ ᴜ ʀ ʙᴀʙ..ᴀᴍ ᴜʀ ᴅᴀᴅ💥"
                 await e.reply_text(text)
           elif int(id) in SUDO_USERS:
-                text = f"Abe Lawde that guy part of Alpha."
+                text = f"ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ʜᴇᴀʀᴛʙᴇᴀᴛ ғᴀᴍ🏓"
                 await e.reply_text(text)
           else:
               fname = ok.first_name
@@ -123,13 +123,12 @@ add_command_help(
     "raid",
     [
         [".raid", "<user id and count>`."],
-        [".pornspam", "<count>`."],
         [".hang", "Make telegram hang."],
     ],
 )
 
 @Client.on_message(
-    filters.command(["dreplyraid"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["drr"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def gmute_user(client: Client, message: Message):
     args = await extract_user(message)
@@ -162,7 +161,7 @@ async def gmute_user(client: Client, message: Message):
 add_command_help(
     "replyraid",
     [
-        [".replyraid", "Reply To User\n To Raid on Someone."],
-        [".dreplyraid", "To Disable ReplyRaid."],
+        [".rr", "Reply To User\n To Raid on Someone."],
+        [".drr", "To Disable ReplyRaid."],
     ],
 )

@@ -187,13 +187,13 @@ async def upstream(client: Client, message: Message):
                 await client.send_document(
                     message.chat.id,
                     "output.txt",
-                    caption=f"**Type** `.update deploy` **To Update Userbot.**",
+                    caption=f"**Type** `.update deploy` **To Update 𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭-✗-𝐁𝐨𝐭.**",
                     reply_to_message_id=status.id,
                 )
                 remove("output.txt")
             else:
                 return await status.edit(
-                    f"{changelog_str}\n**Type** `.update deploy` **To Update Userbot.**",
+                    f"{changelog_str}\n**Type** `.update deploy` **To Update 𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭-✗-𝐁𝐨𝐭.**",
                     disable_web_page_preview=True,
                 )
         else:
@@ -211,7 +211,7 @@ async def upstream(client: Client, message: Message):
         heroku_applications = heroku.apps()
         if not HEROKU_APP_NAME:
             await status.edit(
-                "`Please set up the HEROKU_APP_NAME variable to be able to update userbot.`"
+                "`Please set up the HEROKU_APP_NAME variable to be able to update 𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭-✗-𝐁𝐨𝐭.`"
             )
             repo.__del__()
             return
@@ -221,12 +221,12 @@ async def upstream(client: Client, message: Message):
                 break
         if heroku_app is None:
             await status.edit(
-                f"{txt}\n`Invalid Heroku credentials for updating userbot dyno.`"
+                f"{txt}\n`Invalid Heroku credentials for updating 𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭-✗-𝐁𝐨𝐭 dyno.`"
             )
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: RAUSHAN-Userbot Deploy Update is in Progress...`"
+            "`[HEROKU]: 𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭-✗-𝐁𝐨𝐭 Deploy Update is in Progress...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -243,7 +243,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`RAUSHAN-Userbot Successfully Updated! Userbot can be used again.`"
+            "`𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭-✗-𝐁𝐨𝐭 Successfully Updated! Userbot can be used again.`"
         )
     else:
         try:
@@ -319,7 +319,7 @@ async def updatees(client: Client, message: Message):
 add_command_help(
     "update",
     [
-        ["update", "To see a list of the latest updates from RAUSHAN-Userbot."],
+        ["update", "To see a list of the latest updates from 𝐇𝐞𝐚𝐫𝐭𝐁𝐞𝐚𝐭-✗-𝐁𝐨𝐭."],
         ["update deploy", "To update userbot."],
     ],
 )

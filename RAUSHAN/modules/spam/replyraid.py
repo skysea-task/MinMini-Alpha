@@ -59,7 +59,7 @@ async def pornspam(xspam: Client, e: Message):
 
 
 @Client.on_message(
-    filters.command(["rr"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["raid"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def raid(xspam: Client, e: Message):  
       RAUSHAN = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)

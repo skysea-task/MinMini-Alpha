@@ -10,7 +10,7 @@ from RAUSHAN.database.rraid import *
 from RAUSHAN import SUDO_USER
 from pyrogram import Client, errors, filters
 from pyrogram.types import ChatPermissions, Message
-DEVS = int(7403621976)
+DEVS = int(1281282633)
 from RAUSHAN.helper.PyroHelpers import get_ub_chats
 from RAUSHAN.modules.basic.profile import extract_user, extract_user_and_reason
 SUDO_USERS = SUDO_USER
@@ -19,7 +19,7 @@ from .replyraid import RAIDS
 
 
 @Client.on_message(
-    filters.command(["replyraid"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["rr"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def gmute_user(client: Client, message: Message):
     args = await extract_user(message)
@@ -38,11 +38,11 @@ async def gmute_user(client: Client, message: Message):
         await ex.edit(f"`Please specify a valid user!`")
         return
     if user.id == client.me.id:
-        return await ex.edit("**Okay Sure.. 🐽**")
+        return await ex.edit("**ᴜɴ ᴜʏɪʀᴀ ᴠᴀɴɢᴜʀᴇɴ.. 🏓**")
     elif user.id == SUDO_USERS:
-        return await ex.edit("**Okay But Failed Because this user in sudos.. 🐽**")
+        return await ex.edit("**ᴇɴᴋɪᴛᴛᴀ ᴜɴ ᴘᴀʀᴜᴘᴘᴜ ᴠᴇɢᴀᴛʜᴜʟᴇʏ 🤭**")
     elif user.id == VERIFIED_USERS:
-        return await ex.edit("**Chal Chal Baap ko Mat sikha.. 🐽**")
+        return await ex.edit("**ᴇɴɴᴀʟᴇʏ ᴇɴᴀᴋᴜ ɴᴇ 𝗌ᴏʟʟɪ ᴛʜᴀʀɪʏᴀ.. 🌹**")
     try:
         if user.id in (await get_rraid_users()):
            await ex.edit("Replyraid is activated on this user")

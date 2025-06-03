@@ -32,7 +32,7 @@ async def mentionall(client: Client, message: Message):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"✰ [{usr.user.first_name}](tg://user?id={usr.user.id}),\n\n "
+        usrtxt += f"✰|  [{usr.user.first_name}](tg://user?id={usr.user.id}),\n\n"
         if usrnum == 5:
             if args:
                 txt = f"{args}\n\n\n{usrtxt}"
